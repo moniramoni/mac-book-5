@@ -13,7 +13,6 @@
     <header>
 
     </header>
-
     <main class="w-11/12 mx-auto">
         <section class="grid">
             <div class="grid grid-cols-2 gap-2">
@@ -25,54 +24,78 @@
                 <div class="mt-8 pt-7 pr-8">                    
                     <h3 class="text-4xl pb-4 font-bold pr-12">Customize your Blue 24-inch iMac with Apple M1 chip</h3>
                     <p class="pr-12">Apple M1 chip with 8-core CPU with 4 performance cores and 4 efficiency cores, 7-core GPU, and 16-core Neural Engine 8GB unified memory 256GB SSD storage Two Thunderbolt/ USB 4 ports Magic Mouse Magic Keyboard - US English</p>
+
+
+                    <!-- memory button row -->
+
                     <h3 class="text-xl pb-1 font-bold pt-12 pb-3 ">Memory</h3>  
                     <div class="grid grid-cols-2 gap-2 pr-32">
-                        <button class="bg-gray-100 px-1 py-2 border rounded-sm border-gray-500 hover:bg-gray-900 hover:text-white font-semibold focus:bg-gray-900 focus:text-white text-sm">8GB unified memory</button>
-                        <button class="bg-gray-100 px-1 py-2 rounded-sm border border-gray-500 hover:bg-gray-900 hover:text-white font-semibold focus:bg-gray-900 focus:text-white text-sm">16GB unified memory</button>
+                        <button id="memory-8GB" class="bg-gray-100 px-1 py-2 border rounded-sm border-gray-500 hover:bg-gray-900 hover:text-white font-semibold focus:bg-gray-900 focus:text-white text-sm">8GB unified memory</button>
+                        <button id="memory-16GB" class="bg-gray-100 px-1 py-2 rounded-sm border border-gray-500 hover:bg-gray-900 hover:text-white font-semibold focus:bg-gray-900 focus:text-white text-sm">16GB unified memory</button>
                     </div>
+
+
+                    <!-- storage button row -->
+
                     <h3 class="text-xl pb-1 font-bold pt-12 pb-3">Storage</h3>  
                     <div class="grid grid-cols-3 gap-2 pr-12">
-                        <button class="bg-gray-100 px-1 py-2 border rounded-sm border-gray-500 font-semibold hover:bg-gray-900 hover:text-white focus:bg-gray-900 focus:text-white text-sm">256GB SSD storage</button>
-                        <button class="bg-gray-100 px-1 py-2 rounded-sm border border-gray-500 font-semibold hover:bg-gray-900 hover:text-white
+                        <button id="storage-256GB" class="bg-gray-100 px-1 py-2 border rounded-sm border-gray-500 font-semibold hover:bg-gray-900 hover:text-white focus:bg-gray-900 focus:text-white text-sm">256GB SSD storage</button>
+                        <button id="storage-512GB" class="bg-gray-100 px-1 py-2 rounded-sm border border-gray-500 font-semibold hover:bg-gray-900 hover:text-white
                         focus:bg-gray-900 focus:text-white text-sm">512GB SSD storage</button>
-                        <button class="bg-gray-100 px-1 py-2 rounded-sm border border-gray-500 font-semibold hover:bg-gray-900 hover:text-white focus:bg-gray-900 focus:text-white text-sm">1TB SSD storage</button>
+                        <button id="storage-1TB" class="bg-gray-100 px-1 py-2 rounded-sm border border-gray-500 font-semibold hover:bg-gray-900 hover:text-white focus:bg-gray-900 focus:text-white text-sm">1TB SSD storage</button>
                     </div>
+
+
+                    <!-- Choose your delivery option button row -->
+
                     <h3 class="text-xl pb-1 font-bold pt-12 pb-3">Choose your delivery option</h3>  
                     <div class="grid grid-cols-2 gap-2">
-                        <button class="bg-gray-100 px-1 py-2 border rounded-sm border-gray-500 hover:bg-gray-900 hover:text-white font-semibold focus:bg-gray-900 focus:text-white text-sm">Friday, Aug 25 FREE Prime Delivery</button>
-                        <button class="bg-gray-100 px-1 py-2 rounded-sm border border-gray-500 hover:bg-gray-900 hover:text-white font-semibold focus:bg-gray-900 focus:text-white text-sm">Friday, Aug 21 Delivery charge $20</button>
+                        <button id="free-delivery-charge" class="bg-gray-100 px-1 py-2 border rounded-sm border-gray-500 hover:bg-gray-900 hover:text-white font-semibold focus:bg-gray-900 focus:text-white text-sm">Friday, Aug 25 FREE Prime Delivery</button>
+                        <button id="delivery-charge-20$" class="bg-gray-100 px-1 py-2 rounded-sm border border-gray-500 hover:bg-gray-900 hover:text-white font-semibold focus:bg-gray-900 focus:text-white text-sm">Friday, Aug 21 Delivery charge $20</button>
                     </div>
+
+
+                    <!-- Price table row -->
+
                     <div class="pb-12 pt-4">
                         <div class="w-11/12 px-8">
                             <div class="grid grid-cols-2 gap-2 pl-5">
                                 <div><h3 class="text-xl pb-1 font-bold pt-12 pb-3">Best Price</h3></div>
-                                <div><h3 class="text-xl pb-1 font-bold pt-12 pb-3 pl-16">$<span>1299</span></h3></div>
+                                <div><h3 class="text-xl pb-1 font-bold pt-12 pb-3 pl-16">$<span id="best-price">1299</span></h3></div>
                             </div>
                             <hr class="border-1">
+                            <!-- Extra memory cost price -->
                             <div class="grid grid-cols-2 gap-2 pl-5">
                                 <div><h3 class="text-xl pb-1 font-bold pt-0 pb-3">Extra Memory Cost</h3></div>
-                                <div><h3 class="text-xl pb-1 font-bold pt-0 pb-3 pl-16">$<span>0</span></h3></div>
+                                <div><h3 class="text-xl pb-1 font-bold pt-0 pb-3 pl-16">$<span id="memory-cost">0</span></h3></div>
                             </div>
                             <hr class="border-1">
+                            <!-- Extra storage cost price -->
                             <div class="grid grid-cols-2 gap-2 pl-5">
                                 <div><h3 class="text-xl pb-1 font-bold pt-0 pb-3">Extra Storage Cost</h3></div>
-                                <div><h3 class="text-xl pb-1 font-bold pt-0 pb-3 pl-16">$<span>0</span></h3></div>
+                                <div><h3 class="text-xl pb-1 font-bold pt-0 pb-3 pl-16">$<span id="storage-cost">0</span></h3></div>
                             </div>
                             <hr class="border-1">
+                            <!-- delivery charge -->
                             <div class="grid grid-cols-2 gap-2 pl-5">
                                 <div><h3 class="text-xl pb-1 font-bold pt-0 pb-3">Delivery Charge</h3></div>
-                                <div><h3 class="text-xl pb-1 font-bold pt-0 pb-3 pl-16">$<span>0</span></h3></div>
+                                <div><h3 class="text-xl pb-1 font-bold pt-0 pb-3 pl-16">$<span id="delivery-charge">0</span></h3></div>
                             </div>
                             <hr class="border-black border">
+                            <!-- total price -->
                             <div class="grid grid-cols-2 gap-2 pl-5">
                                 <div><h3 class="text-xl pb-1 font-bold pt-0 pb-3">Total Price</h3></div>
-                                <div><h3 class="text-xl pb-1 font-bold pt-0 pb-3 pl-16">$<span>1299</span></h3></div>
+                                <div><h3 class="text-xl pb-1 font-bold pt-0 pb-3 pl-16">$<span id="total">1299</span></h3></div>
                             </div>
+
+
+                            <!-- Promo code input button row -->
+
                             <div class="grid grid-cols-1 gap-0 pl-5 pt-10">
                                 <h3 class="text-base pb-1 font-bold pt-0 pb-3">Add Promo Code</h3>
                                 <div class="flex w-11/12">
-                                    <input class="bg-gray-100 px-1 py-2 rounded-sm border border-gray-200 w-2/3" type="text" name="" id="">
-                                    <button class="bg-red-600 px-1 py-2 rounded-sm border-2 border-red-600 w-1/3 font-bold text-white focus:text-black">Apply</button>
+                                    <input id="promo-input" class="bg-gray-100 px-1 py-2 rounded-sm border border-gray-200 w-2/3" type="text" name="" id="">
+                                    <button id="promo-btn" class="bg-red-600 px-1 py-2 rounded-sm border-2 border-red-600 w-1/3 font-bold text-white focus:text-black">Apply</button>
                                 </div>
                             </div>
                         </div>
@@ -81,8 +104,10 @@
             </div>
         </section>
         <hr>
+
+        <!-- total discounted price button section -->
         <section>
-            <h3 class="text-4xl pb-4 font-bold pr-12 text-center p-5 pb-16">Total: $<span>1299</span></h3>
+            <h3 class="text-4xl pb-4 font-bold pr-12 text-center p-5 pb-16">Total: $<span id="discount-price">1299</span></h3>
         </section>
     </main>
     <!-- javascript -->
