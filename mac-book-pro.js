@@ -55,7 +55,7 @@ function discount(){
     let discountPrice = parseInt(discountPriceText.innerText)
     promoCode = promoInput.value
     if (promoCode == 'stevekaku') {
-        discountPriceText.innerText = parseInt((total.innerText /100)*80)
+        discountPriceText.innerText = parseFloat((total.innerText /100)*80)
     }
     else (
         alert('you have enterd wrong promo code')
