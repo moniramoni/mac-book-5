@@ -1,12 +1,12 @@
 
 
-const memoryCost = document.getElementById('memory-cost')
-const storageCost = document.getElementById('storage-cost')
-const deliveryCost = document.getElementById('delivery-charge')
-const total = document.getElementById('total')
-const macBookPrice = document.getElementById('best-price')
-const promoInput = document.getElementById('promo-input')
-const discountPriceText = document.getElementById('discount-price')
+const memoryCost = document.getElementById('memory-cost');
+const storageCost = document.getElementById('storage-cost');
+const deliveryCost = document.getElementById('delivery-charge');
+const total = document.getElementById('total');
+const macBookPrice = document.getElementById('best-price');
+const promoInput = document.getElementById('promo-input');
+const discountPriceText = document.getElementById('discount-price');
 
 //   memory cost
 document.getElementById('memory-8GB').addEventListener('click', function () {
@@ -43,22 +43,22 @@ document.getElementById('promo-btn').addEventListener('click', function () {
     discount()
 })
 function updateTotal() {
-    const bestPrice = parseInt(macBookPrice.innerText)
+    const bestPrice = parseInt(macBookPrice.innerText);
     const extraMemoryCost = parseInt(memoryCost.innerText);
-    const extraStorageCost = parseInt(storageCost.innerText)
-    const extraDeliveryCost = parseInt(deliveryCost.innerText)
+    const extraStorageCost = parseInt(storageCost.innerText);
+    const extraDeliveryCost = parseInt(deliveryCost.innerText);
     const grandTotal = bestPrice + extraMemoryCost + extraStorageCost + extraDeliveryCost
     total.innerText = grandTotal
     discountPriceText.innerText = total.innerText
 }
 function discount(){
-    let discountPrice = parseInt(discountPriceText.innerText)
+    let discountPrice = parseInt(discountPriceText.innerText);
     promoCode = promoInput.value
     if (promoCode == 'stevekaku') {
         discountPriceText.innerText = parseFloat((total.innerText /100)*80)
     }
     else (
-        alert('you have enterd wrong promo code')
+        alert('You have entered wrong promo code')
     )
-    promoInput.value = ''
+    promoInput.value = '';
 }
